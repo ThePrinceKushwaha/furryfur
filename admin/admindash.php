@@ -1,3 +1,14 @@
+<?php
+session_start();
+if(isset($_SESSION['uid']))
+{
+	echo "";
+}
+else
+{
+	header('location:../login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link rel="stylesheet" href="furryfur.css">
+    <link rel="stylesheet" href="../furryfur.css">
     <title>FurryFur</title>
 </head>
 <body>
@@ -28,8 +39,8 @@
                             <!-- <button class="log-in">
                                 <a href="firstpge.html"><h2>Log in/Register</h2></a>
                             </button> -->
-                        <a  class="log-in" href="login.php" style="border:1px solid; border-color: brown; padding: 5px;">
-                        Login/Register
+                        <a  class="log-in" href="../logout.php" style="border:1px solid; border-color: brown; padding: 5px;">
+                        logout
                           </a>
                         </li>
                     </ul>
@@ -39,6 +50,9 @@
         </section>
         <!-- End of Header -->
         
+        <div id="loggedIN">
+            <h3 style="padding:10px;text-align:center;">You're Logged In</h3>
+        </div>
         <!-- main section -->
         <section id="main">
             <div class="main container">
@@ -201,18 +215,17 @@
             <p>Copyright &copy; 2022 FurryFur. All rights reserved</p>
         </div>
     </section>
-    <!-- End of footer --> 
-    <script src="furryfur.js"></script>
-    <script>
-        document.addEventListener('scroll',()=>{
-    var scroll_positon = window.scrollY;
-    if(scroll_positon > 250){
-        header.style.backgroundColor = '#000';
-    }
-    else{
-        header.style.backgroundColor = 'transparent';
-    }
-});
-    </script>
-</body>
-</html>
+
+<div class="main_wrapper" style="text-align:center;">
+<a href="../logout.php">logout</a>
+<?php
+?>
+
+
+
+
+// use login credentials
+<!-- 
+HelloWorld12
+
+sandhya@sadhya.com -->

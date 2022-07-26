@@ -54,7 +54,7 @@ passwordInput.addEventListener("blur",()=>{
 document.addEventListener('scroll',()=>{
     var scroll_positon = window.scrollY;
     if(scroll_positon > 250){
-        header.style.backgroundColor = '#29323c';
+        header.style.backgroundColor = '#000';
     }
     else{
         header.style.backgroundColor = 'transparent';
