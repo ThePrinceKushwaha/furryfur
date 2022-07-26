@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Drool.css">
+
+    <title>Drool</title>
+</head>
+<body>
+    <div id="food">
+        <div class="food container">
+            <div class="item">
+               <div class="image"><img src="./imges/drool1.jpg" id="mainimage">
+
+                            <div class="smallimage-group">
+                                <div class="small-img">
+                                      <img src="./imges/drool1.jpg" class="small">
+                                </div>
+                                 <div class="small-img">
+                                      <img src="./imges/drool2.jpg" class="small">
+                                </div>
+                                <div class="small-img">
+                                    <img src="./imges/drool3.jpg" class="small">
+                                </div>
+                                <div class="small-img">
+                                <img src="./imges/drool4.jpg" class="small">
+                                </div>
+                            </div>
+                </div>
+                    <div class="details">
+                        <h2 class="product-name">Drool</h2>
+                        
+                        <div class="price">
+                        <span class="product-price">Rs. 1000</span>
+                        <span class="product-actual-price">Rs. 1100</span>
+                        <span class="product-discount">(10% off)</span>
+                        </div>
+                        <div class="forsize">
+                            <p>
+                                <label>Size:</label>
+                            <select name="size">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                            </p>
+                        </div>
+
+                        <div class="forbutton">
+                            <p>
+                                <label>Quantity:</label>
+                                <button onclick="Totalclicks(1)" class="button1">+</button>
+                                <span id="Totalclicks">0</span>
+                                <button onclick="Totalclicks(-1)">-</button>
+                        </p>
+                        </div>
+
+                        <p  class="description">
+                            About Product <br>
+                            Complete and balanced nutrition with Real Chicken, our Number 1 ingredient, 
+                            helps in puppies’ growth and development A great combination of ingredients
+                            with the goodness of Vitamins, Antioxidants and Minerals that maintain strong
+                            bones and a healthy digestive system
+                        </p>
+                            <div class="option">
+                                <div> <a href="#" type="button" target="_blank">buy now</a></div>
+                            </div>
+                            <div class="option">
+                                <div><a href="#" type="button" target="_blank">add  to cart</a></div>
+                             </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        function Totalclicks(click){
+            var Totalclicks=document.getElementById('Totalclicks');
+            var sumvalue=parseInt(Totalclicks.innerText)+click;
+            Totalclicks.innerText=sumvalue;
+
+            if(sumvalue<0)
+            {
+                Totalclicks.innerText=0;
+            }
+        }
+    </script>
+    <script>
+        var image=document.getElementById('mainimage');
+        var smallimage=document.getElementsByClassName('small');
+
+        smallimage[0].onclick=function(){
+            image.src=smallimage[0].src;
+        }
+        smallimage[1].onclick=function(){
+            image.src=smallimage[1].src;
+        }
+        smallimage[2].onclick=function(){
+            image.src=smallimage[2].src;
+        }
+        smallimage[3].onclick=function(){
+            image.src=smallimage[3].src;
+        }
+        
+    </script>
+
+<section id="featurefood">
+    <div class="food container">
+     <div><h1 class="title">Feature Products</h1></div>
+         <div class="items">
+
+             <div class="item">
+                 <div class="icon"><a href="drool.html" target="_blank"><img src="./imges/simba1.jpeg">
+                <div class="name">
+                 <h2>Simba</h2>
+                 <p>Rs. 1000</p>
+                 </div></a>
+                 </div>
+              </div>
+
+              <div class="item">
+                <div class="icon"><a href="tesco.html" target="_blank"><img src="./imges/hill's.jpg">
+                    <div class="name">
+                        <h2>Hill's</h2>
+                        <p>Rs. 1000</p>
+                    </div>
+                    </a>
+                </div>
+             </div>
+
+             <div class="item">
+                <div class="icon"><a href="tesco.html" target="_blank"><img src="./imges/pro balance+.jpeg">
+                    <div class="name">
+                        <h2>Tesco</h2>
+                        <p>Rs. 1000</p>
+                    </div>
+                    </a>
+                </div>
+             </div>
+
+              <div class="item">
+                 <div class="icon"><a href="Proline.html" target="_blank"><img src="./imges/proline1.jpg">
+                 <div class="name">
+                     <h2>Proline</h2>
+                     <p>Rs. 1200</p>
+                     </div>
+                     </a>
+                 </div>
+              </div>
+
+             </div>
+     </div>
+</section>
+</body>
+</html>

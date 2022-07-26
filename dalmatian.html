@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dalmatian.css">
+
+    <title>Dalmatian</title>
+</head>
+<body>
+    <div id="dog">
+        <div class="dog container">
+            <div class="item">
+               <div class="image"><img src="./imges/dalmatian.png" id="mainimage"> 
+                            </div>
+             </div>
+                    <div class="details">
+                        <h2 class="product-name">Dalmatian</h2>
+                        
+                        <div class="price" >
+                        <span class="dog-price">Rs. 35000</span>
+                        </div>
+
+                        <div class="forbutton">
+                            <p>
+                                <label>Quantity:</label>
+                                <button onclick="Totalclicks(1)" class="button1">+</button>
+                                <span id="Totalclicks">0</span>
+                                <button onclick="Totalclicks(-1)">-</button>
+                        </p>
+                        </div>
+
+                        <p  class="description">
+                           <b><u>About Dalmatian </u></b> <br>
+                           Dalmatians are highly energetic, playful and sensitive dogs. They are loyal to their family and good with children, although some Dalmatian experts caution that the breed may be too energetic for very small children. 
+                           These dogs are intelligent, can be well trained and make good watchdogs.
+                           Males are about 23 inches tall, and females are about 22 inches tall. Both weigh about 45 to 60 pounds (20 to 27 kilograms).
+                           The coat is short and dense, with brown or black spots on white. The Dalmatian sheds heavily, even though the coat is short. Frequent brushing is required to control shedding.
+                            
+                        </p>
+                            <div class="option">
+                                <div> <a href="#" type="button" target="_blank">Buy now</a></div>
+                            </div>
+                            <div class="option">
+                                <div><a href="#" type="button" target="_blank">Add  to cart</a></div>
+                             </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        function Totalclicks(click){
+            var Totalclicks=document.getElementById('Totalclicks');
+            var sumvalue=parseInt(Totalclicks.innerText)+click;
+            Totalclicks.innerText=sumvalue;
+
+            if(sumvalue<0)
+            {
+                Totalclicks.innerText=0;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Tesco.css">
+    <title>Tesco</title>
+</head>
+<body>
+    <div id="food">
+        <div class="food container">
+            <div class="item">
+               <div class="image"><img src="./imges/tesco.jpeg" id="mainimage">
+                <div class="smallimage-group">
+                    <div class="small-img">
+                          <img src="./imges/tesco.jpeg" class="small">
+                    </div>
+                     <div class="small-img">
+                          <img src="./imges/tesco2.jpeg" class="small">
+                    </div>
+                    <div class="small-img">
+                        <img src="./imges/tesco3.jpeg" class="small">
+                    </div>
+                    <div class="small-img">
+                    <img src="./imges/tesco4.jpg" class="small">
+                    </div>
+                </div>
+                </div>
+                    <div class="details">
+                        <h2 class="product-name">Tesco</h2>
+                        
+                        <div class="price">
+                        <span class="product-price">Rs. 1000</span>
+                        <span class="product-actual-price">Rs. 1100</span>
+                        <span class="product-discount">(10% off)</span>
+                        </div>
+                            <div class="forsize">
+                                <label>Size:</label>
+                                <select name="size">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                            </div>
+
+                            <div class="forbutton">
+                                <p>
+                                    <label>Quantity:</label>
+                                    <button onclick="Totalclicks(1)">+</button>
+                                    <span id="Totalclicks">0</span>
+                                    <button onclick="Totalclicks(-1)">-</button>
+                            </p>
+                            </div>
+                        </form>
+                        <p  class="description">
+                            About Product <br>
+                            A complete dry feed for adult worker dogs aged 1-7 years.
+                            At Tesco, we know that your dog is part of your family, and you want to give them the best.
+                             That's why we've worked with animal nutrition experts to create a range of dog food, with 
+                             wholesome nutritious ingredients, essential vitamins and minerals with 100% of the daily 
+                             nutrients your dog needs at each life stage. For healthy, happy dogs that live life to the 
+                             full
+                        </p>
+                        <div class="option">
+                            <div> <a href="#" type="button" target="_blank">buy now</a></div>
+                        </div>
+                        <div class="option">
+                            <div><a href="#" type="button" target="_blank">add  to cart</a></div>
+                         </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        function Totalclicks(click){
+            var Totalclicks=document.getElementById('Totalclicks');
+            var sumvalue=parseInt(Totalclicks.innerText)+click;
+            Totalclicks.innerText=sumvalue;
+
+            if(sumvalue<0)
+            {
+                Totalclicks.innerText=0;
+            }
+        }
+    </script>
+
+<script>
+    var image=document.getElementById('mainimage');
+    var smallimage=document.getElementsByClassName('small');
+
+    smallimage[0].onclick=function(){
+        image.src=smallimage[0].src;
+    }
+    smallimage[1].onclick=function(){
+        image.src=smallimage[1].src;
+    }
+    smallimage[2].onclick=function(){
+        image.src=smallimage[2].src;
+    }
+    smallimage[3].onclick=function(){
+        image.src=smallimage[3].src;
+    }
+    
+</script>
+
+<section id="featurefood">
+    <div class="food container">
+     <div><h1 class="title">Feature Products</h1></div>
+         <div class="items">
+
+             <div class="item">
+                 <div class="icon"><a href="drool.html" target="_blank"><img src="./imges/drool1.jpg">
+                <div class="name">
+                 <h2>Drools Chicken</h2>
+                 <p>Rs. 1000</p>
+                 </div></a>
+                 </div>
+              </div>
+
+              <div class="item">
+                <div class="icon"><a href="tesco.html" target="_blank"><img src="./imges/nutro.jpg">
+                    <div class="name">
+                        <h2>Nutro</h2>
+                        <p>Rs. 1000</p>
+                    </div>
+                    </a>
+                </div>
+             </div>
+
+             <div class="item">
+                <div class="icon"><a href="tesco.html" target="_blank"><img src="./imges/pro balance+.jpeg">
+                    <div class="name">
+                        <h2>Tesco</h2>
+                        <p>Rs. 1000</p>
+                    </div>
+                    </a>
+                </div>
+             </div>
+
+              <div class="item">
+                 <div class="icon"><a href="Proline.html" target="_blank"><img src="./imges/proline1.jpg">
+                 <div class="name">
+                     <h2>Proline</h2>
+                     <p>Rs. 1200</p>
+                     </div>
+                     </a>
+                 </div>
+              </div>
+
+             </div>
+     </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="proline.css">
+    <title>Proline</title>
+</head>
+<body>
+    <div id="food">
+        <div class="food container">
+            <div class="item">
+               <div class="image"><img src="./imges/proline1.jpg" id="mainimage">
+                <div class="smallimage-group">
+                    <div class="small-img">
+                          <img src="./imges/proline1.jpg" class="small">
+                    </div>
+                     <div class="small-img">
+                          <img src="./imges/proline2.jpg" class="small">
+                    </div>
+                    <div class="small-img">
+                        <img src="./imges/proline3.jpg" class="small">
+                    </div>
+                    <div class="small-img">
+                    <img src="./imges/proline4.jpg" class="small">
+                    </div>
+                </div>
+                </div>
+                    <div class="details">
+                        <h2 class="product-name">Proline</h2>
+                        
+                        <div class="price">
+                        <span class="product-price">Rs. 1200</span>
+                        <span class="product-actual-price">Rs. 1320</span>
+                        <span class="product-discount">(10% off)</span>
+                        </div>
+                            <div class="forsize">
+                                <label>Size:</label>
+                                <select name="size">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                            </div>
+
+                            <div class="forbutton">
+                                <p>
+                                    <label>Quantity:</label>
+                                    <button onclick="Totalclicks(1)">+</button>
+                                    <span id="Totalclicks">0</span>
+                                    <button onclick="Totalclicks(-1)">-</button>
+                            </p>
+                            </div>
+                        </form>
+                        
+                        <p  class="description">
+                            About Product <br>
+                            Fully balanced all natural dog food with lamb protein plus brewer’s yeast and whey
+                            protein for immune support and omega -3 and -6 from flaxseed. Carefully formulated
+                            by cat / dog nutritionists to meet the nutritional requirements of all adult dogs.
+                        </p>
+                        <div class="option">
+                            <div> <a href="#" type="button" target="_blank">buy now</a></div>
+                        </div>
+                        <div class="option">
+                            <div><a href="#" type="button" target="_blank">add  to cart</a></div>
+                         </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        function Totalclicks(click){
+            var Totalclicks=document.getElementById('Totalclicks');
+            var sumvalue=parseInt(Totalclicks.innerText)+click;
+            Totalclicks.innerText=sumvalue;
+
+            if(sumvalue<0)
+            {
+                Totalclicks.innerText=0;
+            }
+        }
+    </script>
+
+<script>
+    var image=document.getElementById('mainimage');
+    var smallimage=document.getElementsByClassName('small');
+
+    smallimage[0].onclick=function(){
+        image.src=smallimage[0].src;
+    }
+    smallimage[1].onclick=function(){
+        image.src=smallimage[1].src;
+    }
+    smallimage[2].onclick=function(){
+        image.src=smallimage[2].src;
+    }
+    smallimage[3].onclick=function(){
+        image.src=smallimage[3].src;
+    }
+    
+</script>
+</body>
+</html>

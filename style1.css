@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+.title{
+    color: crimson;
+}
+img{
+    height: 150px;
+    width: 150;
+    object-fit: cover;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+#food .food{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#food .items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rating{
+    size: 10px;
+}
+#food .item{
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 3s ease box-shadow color;
+}
+#food .item:hover{
+    color: crimson;
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#food .name h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+a{
+    text-decoration: none;
+}
+#food .more{
+    font-size: 40px;
+}
+#food .more{
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid crimson;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+}
+#food .more:hover{
+color:white;
+background-color:crimson;
+}
+#food .name p{
+    font-size: 20px;
+}
+/*tablet mode*/
+#food .food{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+}
+
+/*desktop mode*/
+@media only screen and (min-width: 1200px){
+    #food .items .item{
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}

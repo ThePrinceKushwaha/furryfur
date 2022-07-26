@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+.title{
+    font-size: 50px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(78, 58, 148);
+}
+.title:hover{
+    color: blueviolet;
+}
+img{
+    height: 150px;
+    width: 150;
+    object-fit: cover;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+#dog .dog{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#dog .items{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#dog .item{
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 3s ease box-shadow color;
+}
+#dog .item:hover{
+    color: crimson;
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#dog .name h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+a{
+    text-decoration: none;
+}
+#dog .more{
+    font-size: 40px;
+}
+#dog .more{
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    border: 2px solid crimson;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+}
+#dog .more:hover{
+color:white;
+background-color:crimson;
+}
+#dog .name p{
+    font-size: 20px;
+}
+/*tablet mode*/
+#dog .dog{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+    display:flex;
+}
+#dog .items{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0;
+}
+#dog .item{
+    margin: 20px;
+    flex-direction: row;
+    width: 10%;
+}
+#dog .item.img{
+    object-fit: contain;
+}
+#dog .item .name{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/*desktop mode*/
+@media only screen and (min-width: 1200px){
+    #food .items .item{
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}

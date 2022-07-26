@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+img{
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#food .food{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#food .items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+ }
+#food .item{
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 3s ease box-shadow;
+}
+#food .item:hover{
+        color: crimson;
+        box-shadow: 0px 0px 5px 0 #0000002c;
+}
+.item p{
+    font-size: 30px;
+}
+#food .option{
+        width: 100%;
+        font-size: 5px;
+        display: inline-block;
+        padding: 10px 30px;
+        color: crimson;
+        background-color: transparent;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        margin-top: 10px;
+        display: flex;
+        transition: .3s ease background-color;
+}
+#food .option1{
+    font-size: 5px;
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 30px;
+    text-transform: lowercase;
+    letter-spacing: 0rem;
+    border-radius: 20px;
+    transition: .3s ease background-color;
+}
+#food .option1:hover{
+    color:white;
+    background-color:crimson;
+    
+}
+#food .option2{
+    font-size: 5px;
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 30px;
+    text-transform: lowercase;
+    letter-spacing: 0rem;
+    border-radius: 20px;
+    margin-left: 10px;
+    transition: .3s ease background-color;  
+}
+
+#food .option2:hover{
+    color:white;
+    background-color:crimson;
+ }
+#food .items{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#food .name h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+/*tablet mode*/
+#food .food{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+}
+#food .items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: crimson;
+    padding: 15px 20px;
+    color: white;
+    font-size: 10px;
+}

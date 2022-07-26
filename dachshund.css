@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+}
+img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+}
+
+#dog .item{
+    width: 50%;
+    height: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 3s ease box-shadow color;
+}
+.product-name{
+    font-size: 10px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color:rgb(103, 103, 202);
+    text-align: justify;
+}
+.price{
+    text-align: left;
+}
+.dog-price{
+    font-size: 20px;
+    text-align: left;
+    padding: 40px 10px;
+}
+.forbutton{
+    text-align: justify;
+    font-size: 20px;
+    padding: 10px;
+}
+button{
+    font-size:20px;
+    width: 30px;
+}
+.description{
+    font-size: 10px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color:whitesmoke;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color:rgb(103, 103, 202);
+    text-align: justify;
+    color:black;
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+.option{
+    border-radius: 5px;
+    width:100px;
+    font-size:20px;
+    float: right;
+    padding: 5px;
+    background-color: rgb(194, 132, 194);
+}
+
+
+

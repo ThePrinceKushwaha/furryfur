@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bulldog.css">
+
+    <title>Bulldog</title>
+</head>
+<body>
+    <div id="dog">
+        <div class="dog container">
+            <div class="item">
+               <div class="image"><img src="./imges/bulldog.png" id="mainimage"> 
+                            </div>
+             </div>
+                    <div class="details">
+                        <h2 class="product-name">Bulldog</h2>
+                        
+                        <div class="price" >
+                        <span class="dog-price">Rs. 20000</span>
+                        </div>
+
+                        <div class="forbutton">
+                            <p>
+                                <label>Quantity:</label>
+                                <button onclick="Totalclicks(1)" class="button1">+</button>
+                                <span id="Totalclicks">0</span>
+                                <button onclick="Totalclicks(-1)">-</button>
+                        </p>
+                        </div>
+
+                        <p  class="description">
+                           <b><u>About Bulldog </u></b> <br>
+                           The Bulldog is friendly and easygoing; he gets along with everyone. He can be a slow learner, but once he knows something, 
+                           he's got it for good. Bulldogs don't tend to be barkers. Usually their appearance alone is enough to frighten off intruders.
+                           Mature male Bulldogs weigh about 50 pounds; mature females about 40 pounds. Show dogs may be about 10 pounds heavier.
+                            They stand 12 to 15 inches at the shoulder.
+                        </p>
+                            <div class="option">
+                                <div> <a href="#" type="button" target="_blank">Buy now</a></div>
+                            </div>
+                            <div class="option">
+                                <div><a href="#" type="button" target="_blank">Add  to cart</a></div>
+                             </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        function Totalclicks(click){
+            var Totalclicks=document.getElementById('Totalclicks');
+            var sumvalue=parseInt(Totalclicks.innerText)+click;
+            Totalclicks.innerText=sumvalue;
+
+            if(sumvalue<0)
+            {
+                Totalclicks.innerText=0;
+            }
+        }
+    </script>
+    
+</body>
+</html>

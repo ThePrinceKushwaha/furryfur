@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+img{
+    height: 150px;
+    width: 150;
+    object-fit: cover;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+#dog .dog{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#dog .items{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#dog .item{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 3s ease box-shadow color;
+}
+#dog .name h2{
+    font-size: 25px;
+    font-weight:800;
+    margin-bottom: 5px;
+    color:rgb(94, 56, 56);
+}
+a{
+    text-decoration: none;
+}
+#dog .name p{
+    font-size: 15px;
+    font-weight:800;
+    margin-bottom: 5px;
+    color:rgb(83, 71, 71);
+}
+
+/*tablet mode*/
+#dog .dog{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+}
+
+/*desktop mode*/
+@media only screen and (min-width: 1200px){
+    #food .items .item{
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}

@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+}
+img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+}
+#food .image{
+    width: 80%;
+    height: 80%;
+}
+#food .item{
+    width: 90%;
+    height: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 3s ease box-shadow color;
+}
+#food .item:hover{
+    color: crimson;
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+.smallimage-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img{
+    cursor: pointer;
+    padding: 5px;
+    padding-top: 5px;
+}
+.small{
+    width:100px;
+    height: 100px;
+    border: 1px solid;
+}
+.product-name{
+    font-size: 50px;
+    color:black;
+    text-align: justify;
+}
+.price{
+    text-align: left;
+}
+.product-price{
+    font-size: 30px;
+    text-align: left;
+    padding: 10px;
+}
+.product-actual-price{
+    font-size: 30px;
+    text-decoration: line-through;
+    text-align: justify;
+}
+.product-discount{
+    font-size: 30px;
+    text-align: justify;
+}
+.forsize{
+    font-size: 20px;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.forbutton{
+    text-align: justify;
+    font-size: 20px;
+    padding: 10px;
+}
+button{
+    font-size:20px;
+    width: 30px;
+}
+#food .description{
+    color:black;
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+#food .option{
+    font-size: 5px;
+    width: 200px;
+    display: inline-block;
+    padding: 10px 10px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 30px;
+    text-transform: lowercase;
+    letter-spacing: 0rem;
+    border-radius: 20px;
+    transition: .3s ease background-color;
+    
+    }
+    #food .option:hover{
+    color:white;
+    background-color:crimson;
+    }
+
+
+

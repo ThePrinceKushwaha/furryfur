@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="doberman.css">
+
+    <title>Doberman</title>
+</head>
+<body>
+    <div id="dog">
+        <div class="dog container">
+            <div class="item">
+               <div class="image"><img src="./imges/doberman.png" id="mainimage"> 
+                            </div>
+             </div>
+                    <div class="details">
+                        <h2 class="product-name">Doberman</h2>
+                        
+                        <div class="price" >
+                        <span class="dog-price">Rs. 25000</span>
+                        </div>
+
+                        <div class="forbutton">
+                            <p>
+                                <label>Quantity:</label>
+                                <button onclick="Totalclicks(1)" class="button1">+</button>
+                                <span id="Totalclicks">0</span>
+                                <button onclick="Totalclicks(-1)">-</button>
+                        </p>
+                        </div>
+
+                        <p  class="description">
+                           <b><u>About Doberman </u></b> <br>
+                            Doberman pinschers are considered people-oriented dogs that are affectionate and sweet with people, if socialized and trained properly.
+                             They are loyal to their owners and are good with children if raised with them; however, some Dobermans bond only to one person.
+                        </p>
+                            <div class="option">
+                                <div> <a href="#" type="button" target="_blank">Buy now</a></div>
+                            </div>
+                            <div class="option">
+                                <div><a href="#" type="button" target="_blank">Add  to cart</a></div>
+                             </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        function Totalclicks(click){
+            var Totalclicks=document.getElementById('Totalclicks');
+            var sumvalue=parseInt(Totalclicks.innerText)+click;
+            Totalclicks.innerText=sumvalue;
+
+            if(sumvalue<0)
+            {
+                Totalclicks.innerText=0;
+            }
+        }
+    </script>
+</body>
+</html>
